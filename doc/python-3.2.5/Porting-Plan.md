@@ -14,8 +14,8 @@ This document outlines a phased approach for porting `attrs` to run under Python
 - [x] Ensure the project can be installed in a Python 3.2.5 environment using `pip`.
 
 ## Phase 3: Basic Compatibility Fixes
-- Replace syntax introduced after Python 3.2 (e.g., f-strings) with older equivalents.
-- Provide polyfills or conditional imports for standard library modules introduced after 3.2.
+- [x] Replace syntax introduced after Python 3.2 (e.g., f-strings) with older equivalents.
+- [x] Provide polyfills or conditional imports for standard library modules introduced after 3.2.
 - Run the test suite again and document remaining issues.
 
 ## Phase 4: Feature Backports

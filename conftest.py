@@ -9,13 +9,13 @@ from hypothesis import HealthCheck, settings
 from attr._compat import PY_3_10_PLUS
 
 
-@pytest.fixture(name="slots", params=(True, False))
-def _slots(request):
+@pytest.fixture(params=(True, False))
+def slots(request):
     return request.param
 
 
-@pytest.fixture(name="frozen", params=(True, False))
-def _frozen(request):
+@pytest.fixture(params=(True, False))
+def frozen(request):
     return request.param
 
 

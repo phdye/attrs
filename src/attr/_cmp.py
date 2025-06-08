@@ -138,9 +138,9 @@ def _make_operator(name, func):
 
         return result
 
-    method.__name__ = f"__{name}__"
-    method.__doc__ = (
-        f"Return a {_operation_names[name]} b.  Computed by attrs."
+    method.__name__ = "__{0}__".format(name)
+    method.__doc__ = "Return a {0} b.  Computed by attrs.".format(
+        _operation_names[name]
     )
 
     return method

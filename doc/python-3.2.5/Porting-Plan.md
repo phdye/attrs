@@ -9,9 +9,9 @@ This document outlines a phased approach for porting `attrs` to run under Python
 - Document all initial failures in `doc/python-3.2.5/Baseline-Report.md` for reference.
 
 ## Phase 2: Update Packaging and Tooling
-- Modify `pyproject.toml` and any CI configuration to allow Python 3.2.5 as a supported version.
-- Update dependencies or pin older versions that still support Python 3.2.
-- Ensure the project can be installed in a Python 3.2.5 environment using `pip`.
+- [x] Modify `pyproject.toml` and any CI configuration to allow Python 3.2.5 as a supported version.
+- [x] Update dependencies or pin older versions that still support Python 3.2.
+- [x] Ensure the project can be installed in a Python 3.2.5 environment using `pip`.
 
 ## Phase 3: Basic Compatibility Fixes
 - Replace syntax introduced after Python 3.2 (e.g., f-strings) with older equivalents.
